@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pelatihan Node.js</title>
+  </head>
+  <body>
+    <h1 id="title">Pelatihan Node.js</h1>
+    <script>
+      const p = new URLSearchParams(window.location.search);
+      const jenisPelatihan = p.get("jenisPelatihan");
+      if (jenisPelatihan) {
+        document.querySelector("#title").textContent =
+          `Pelatihan ${jenisPelatihan}`;
+      }
+    </script>
+  </body>
+</html>
