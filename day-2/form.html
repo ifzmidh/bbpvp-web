@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak | Nama Kamu</title>
+    <style>
+      body {
+        max-width: 680px;
+        margin: 48px auto;
+        padding: 0 20px;
+        font:
+          16px/1.6 Arial,
+          sans-serif;
+        color: #202a35;
+        background: #f4f7f6;
+      }
+      main {
+        padding: 32px;
+        background: white;
+        border-top: 5px solid #168477;
+      }
+      nav {
+        display: flex;
+        gap: 18px;
+        margin-bottom: 32px;
+      }
+      a {
+        color: #08776d;
+      }
+      label {
+        display: block;
+        margin: 18px 0 6px;
+        font-weight: 700;
+      }
+      input,
+      textarea {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #bac9c5;
+        border-radius: 3px;
+        font: inherit;
+      }
+      textarea {
+        min-height: 140px;
+        resize: vertical;
+      }
+      button {
+        margin-top: 20px;
+        padding: 11px 18px;
+        border: 0;
+        border-radius: 3px;
+        color: white;
+        background: #08776d;
+        font: inherit;
+        cursor: pointer;
+      }
+      @media (max-width: 520px) {
+        body {
+          margin: 20px auto;
+        }
+        main {
+          padding: 22px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav aria-label="Navigasi utama">
+        <a href="index.html">Beranda</a>
+        <a href="form.html" aria-current="page">Kontak</a>
+      </nav>
+
+      <h1>Hubungi saya</h1>
+      <p>Ceritakan sedikit tentang kebutuhan atau ide kamu.</p>
+
+      <form action="proses.html" method="get">
+        <label for="nama">Nama</label>
+        <input id="nama" name="nama" type="text" autocomplete="name" required />
+
+        <label for="email">Email</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+        />
+
+        <label for="subjek">Subjek</label>
+        <input id="subjek" name="subjek" type="text" required />
+
+        <label for="pesan">Pesan</label>
+        <textarea id="pesan" name="pesan" required></textarea>
+
+        <button type="submit">Kirim pesan</button>
+      </form>
+    </main>
+  </body>
+</html>

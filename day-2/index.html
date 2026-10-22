@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Nama Kamu</title>
+    <style>
+      body {
+        max-width: 760px;
+        margin: 48px auto;
+        padding: 0 20px;
+        font:
+          16px/1.6 Arial,
+          sans-serif;
+        color: #202a35;
+        background: #f4f7f6;
+      }
+      main {
+        padding: 32px;
+        background: white;
+        border-top: 5px solid #168477;
+      }
+      nav {
+        display: flex;
+        gap: 18px;
+        margin-bottom: 40px;
+      }
+      a {
+        color: #08776d;
+      }
+      h1 {
+        margin-bottom: 8px;
+        font-size: 40px;
+        line-height: 1.15;
+      }
+      .muted {
+        color: #61706f;
+      }
+      section {
+        margin-top: 32px;
+      }
+      .project {
+        padding: 14px 0;
+        border-top: 1px solid #dce5e2;
+      }
+      @media (max-width: 520px) {
+        body {
+          margin: 20px auto;
+        }
+        main {
+          padding: 22px;
+        }
+        h1 {
+          font-size: 32px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav aria-label="Navigasi utama">
+        <a href="index.html">Beranda</a>
+        <a href="form.html">Kontak</a>
+      </nav>
+
+      <header>
+        <p class="muted">PORTFOLIO</p>
+        <h1>Halo, saya Nama Kamu.</h1>
+        <p>
+          Saya seorang web developer yang senang membuat website sederhana,
+          cepat, dan mudah digunakan.
+        </p>
+        <p><a href="form.html">Hubungi saya</a></p>
+      </header>
+
+      <section aria-labelledby="tentang">
+        <h2 id="tentang">Tentang saya</h2>
+        <p>
+          Saya sedang mengembangkan kemampuan di bidang web development. Saya
+          terbuka untuk kolaborasi, proyek freelance, maupun kesempatan kerja.
+        </p>
+      </section>
+
+      <section aria-labelledby="proyek">
+        <h2 id="proyek">Proyek pilihan</h2>
+        <article class="project">
+          <h3>Website Portfolio</h3>
+          <p class="muted">
+            Halaman portfolio pribadi menggunakan HTML dan CSS.
+          </p>
+        </article>
+        <article class="project">
+          <h3>Website Profil Usaha</h3>
+          <p class="muted">
+            Contoh halaman informasi untuk memperkenalkan layanan usaha.
+          </p>
+        </article>
+      </section>
+
+      <section aria-labelledby="kontak">
+        <h2 id="kontak">Mari terhubung</h2>
+        <p>
+          Punya ide atau ingin bekerja sama? Kirim pesan melalui
+          <a href="form.html">form kontak</a>.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
