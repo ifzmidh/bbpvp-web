@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KasirKu - Daftar Produk</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+      integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    />
+    <!-- <script src="js/script.js"></script> -->
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <span>KasirKu</span>
+        <span class="status-badge"> Toko Berkah Warung - Buka</span>
+      </div>
+      <nav class="main-nav">
+        <a href="">Kasir Transaksi</a>
+        <a href="index.html" class="active">Daftar Produk</a>
+        <a href="form.html">Tambah Produk</a>
+      </nav>
+      <div class="nav-user">
+        <div class="user-profile">
+          <img
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100"
+            class="user-avatar"
+            alt="Mbak Sri"
+          />
+          <div>
+            <strong>Mbak Sri (Kasir)</strong><br />
+            <small style="color: var(--warna-teks-muted)">Admin & Kasir</small>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-header">
+        <div>
+          <div class="sub-breadcrumb">MANAJEMEN WARUNG / KATALOG & GUDANG</div>
+          <h1>Daftar Produk & Stok Toko</h1>
+          <p style="color: var(--warna-teks-muted)">
+            Kelola ketersediaan barang, kontrol harga jual, dan pantau
+            peringatan habis barang secara instan.
+          </p>
+        </div>
+        <div style="display: flex; gap: 12px">
+          <button class="btn-secondary">
+            <i class="bi bi-cloud-arrow-down badge-success"></i> Unduh Laporan
+          </button>
+          <a href="form.html" class="btn-primary">+ Tambah Produk</a>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div>
+            <small style="color: var(--warna-teks-muted)"
+              >Total Produk Terdaftar</small
+            >
+            <div class="stat-number">
+              48
+              <small style="font-size: 14px; font-weight: normal"
+                >item SKU</small
+              >
+            </div>
+            <small style="color: var(--warna-sukses)"
+              >✓ 100% tersinkron POS</small
+            >
+          </div>
+          <div class="stat-icon-bg">
+            <i class="bi bi-boxes badge-warning"></i>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div>
+            <small style="color: var(--warna-teks-muted)"
+              >Perlu Restock Segera</small
+            >
+            <div class="stat-number" style="color: var(--warna-danger)">
+              4
+              <small
+                style="
+                  font-size: 14px;
+                  font-weight: normal;
+                  color: var(--warna-danger);
+                "
+                >item butuh perhatian</small
+              >
+            </div>
+            <small style="color: var(--warna-teks-muted)"
+              >• 1 produk habis total</small
+            >
+          </div>
+          <div class="stat-icon-bg" style="background-color: #fee2e2">
+            <i class="bi bi-triangle badge-warning"></i>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div>
+            <small style="color: var(--warna-teks-muted)"
+              >Estimasi Nilai Inventaris</small
+            >
+            <div class="stat-number">Rp 8.450.000</div>
+            <small style="color: var(--warna-teks-muted)"
+              >📈 Modal berputar di etalase</small
+            >
+          </div>
+          <div class="stat-icon-bg" style="background-color: #fef3c7">
+            <i class="bi bi-cash-coin badge-success"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-container">
+        <div
+          style="
+            padding: 16px;
+            border-bottom: 1px solid var(--warna-border);
+            display: flex;
+            gap: 12px;
+          "
+        >
+          <input
+            type="text"
+            placeholder="Cari produk warung, barcode, atau kategori..."
+            style="flex: 1"
+          />
+          <button class="btn-secondary">Sortir: Stok</button>
+        </div>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th><input type="checkbox" /></th>
+              <th>NAMA PRODUK</th>
+              <th>KATEGORI / SATUAN</th>
+              <th>HARGA JUAL</th>
+              <th>STOK</th>
+              <th>STATUS KETERSEDIAAN</th>
+              <th>AKSI</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>
+                <div style="display: flex; gap: 12px; align-items: center">
+                  <img
+                    src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=80"
+                    style="
+                      width: 40px;
+                      height: 40px;
+                      border-radius: 6px;
+                      object-fit: cover;
+                    "
+                  />
+                  <div>
+                    <strong>Beras Ramos 5kg</strong><br /><small
+                      style="color: var(--warna-teks-muted)"
+                      >SKU: BR-RAMOS-05</small
+                    >
+                  </div>
+                </div>
+              </td>
+              <td>
+                Sembako<br /><small style="color: var(--warna-teks-muted)"
+                  >Per Karung (5kg)</small
+                >
+              </td>
+              <td><strong>Rp 72.000</strong></td>
+              <td><strong>15</strong></td>
+              <td><span class="badge badge-success">● Tersedia</span></td>
+              <td>
+                <button
+                  style="
+                    background-color: rgb(3, 158, 3);
+                    padding: 10px;
+                    border-radius: 8px;
+                    color: #fee2e2;
+                    border: none;
+                  "
+                >
+                  <i class="bi bi-pencil-square"></i> Edit
+                </button>
+                <button
+                  style="
+                    background-color: rgb(247, 35, 35);
+                    padding: 10px;
+                    border-radius: 8px;
+                    color: #fee2e2;
+                    border: none;
+                  "
+                >
+                  <i class="bi bi-x-circle-fill"></i> Delete
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <div>KasirKu POS Warung • Versi 2.4.0 (Kilat Retail UMKM)</div>
+      <div>Bantuan Cepat: 0812-3456-7890 | Status Mesin Kasir: Normal</div>
+    </footer>
+  </body>
+</html>
